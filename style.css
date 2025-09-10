@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.gift-banner {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.gift-banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+.login-box {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeInUp 1s ease-out;
+}
+
+.gift-info {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  padding: 30px;
+  color: #333;
+}
+
+.gift-info h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #d63384;
+  font-size: 1.8em;
+}
+
+.gift-items {
+  margin-bottom: 20px;
+}
+
+.gift-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gift-item:hover {
+  transform: translateX(10px);
+}
+
+.gift-item .icon {
+  font-size: 1.5em;
+  margin-right: 15px;
+  min-width: 40px;
+}
+
+.note {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #d63384;
+}
+
+.gift-form {
+  padding: 40px;
+}
+
+.gift-form h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.gift-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.gift-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.terms {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.terms a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.success-content {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: bounceIn 0.5s ease-out;
+}
+
+.success-content h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.success-content p {
+  margin-bottom: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gift-banner h1 {
+    font-size: 2em;
+  }
+
+  .login-box {
+    margin: 20px 0;
+  }
+
+  .gift-info,
+  .gift-form {
+    padding: 25px;
+  }
+
+  .success-content {
+    padding: 30px 20px;
+  }
+}

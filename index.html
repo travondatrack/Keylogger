@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương Trình Quà Tặng Đặc Biệt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="gift-banner">
+        <h1>🎁 CHƯƠNG TRÌNH QUÀ TẶNG ĐẶC BIỆT 🎁</h1>
+        <p class="subtitle">Dành riêng cho khách hàng thân thiết</p>
+      </div>
+
+      <div class="login-box">
+        <div class="gift-info">
+          <h2>✨ Quà Tặng Hấp Dẫn Đang Chờ Bạn!</h2>
+
+          <div class="gift-items">
+            <div class="gift-item">
+              <span class="icon">🎉</span>
+              <span>Phiếu giảm giá 50% cho lần mua tiếp theo</span>
+            </div>
+            <div class="gift-item">
+              <span class="icon">🎁</span>
+              <span>Bộ quà tri ân đặc biệt + voucher mua sắm</span>
+            </div>
+            <div class="gift-item">
+              <span class="icon">📦</span>
+              <span>Cơ hội rút thăm trúng thưởng giá trị</span>
+            </div>
+          </div>
+
+          <p class="note">
+            💡 <strong>Lưu ý:</strong> Chương trình có hạn, chỉ áp dụng cho
+            khách hàng đăng ký mới trong tháng này!
+          </p>
+        </div>
+
+        <form id="giftForm" class="gift-form">
+          <h3>Nhận quà tặng ngay</h3>
+
+          <div class="form-group">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <button type="submit" class="gift-btn">🎁 NHẬN QUÀ NGAY</button>
+        </form>
+      </div>
+
+      <div class="success-message" id="successMessage" style="display: none">
+        <div class="success-content">
+          <h2>🎉 Chúc mừng!</h2>
+          <p>Bạn đã đăng ký thành công!</p>
+          <p>Quà tặng của bạn đã được gửi vào email.</p>
+          <button onclick="downloadGift()" class="download-btn">
+            📥 Tải về chi tiết quà tặng
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
