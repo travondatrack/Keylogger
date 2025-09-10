@@ -1,16 +1,15 @@
 {
   "name": "gift-landing-page",
   "version": "1.0.0",
-  "description": "Landing page for gift program",
+  "description": "Landing page for gift program with form submission.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16"
   }
 }
